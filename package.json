@@ -1,0 +1,17 @@
+{
+  "name": "input-components",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "angular": "^1.5.8",
+    "babel-core": "^6.13.2",
+    "babel-loader": "^6.2.5",
+    "webpack": "^1.13.2"
+  }
+}
