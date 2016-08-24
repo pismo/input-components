@@ -1,0 +1,13 @@
+{
+  "name": "input-components",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "enzo <enzo.toshiba@pismo.com.br>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/pismo/input-components",
+  "dependencies": {
+    "angular": "^1.5.8"
+  }
+}
