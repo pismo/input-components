@@ -1,4 +1,4 @@
 import angular from 'angular';
 
 angular
-    .module('input', []);
+    .module('inputValidations', []);

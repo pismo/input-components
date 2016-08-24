@@ -1,7 +1,7 @@
 import angular from 'angular';
 
 angular
-    .module('input')
+    .module('inputValidations')
     .directive('equality', equality);
 
 function equality() {
