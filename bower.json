@@ -1,7 +1,7 @@
 {
   "name": "input-components",
   "description": "",
-  "main": "bundle.js",
+  "main": "dist/bundle.js",
   "authors": [
     "enzo <enzo.toshiba@gmail.com>"
   ],
