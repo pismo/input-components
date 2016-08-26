@@ -7,7 +7,7 @@
     "build": "webpack -p",
     "lint": "npm run lint-code -- --fix",
     "lint-code": "eslint app/scripts/**",
-    "docs": "jsdoc --destination docs src/**",
+    "docs": "jsdoc --destination docs -r src/**",
     "ci": "npm run lint-code -- -o ./reports/checkstyle.xml -f checkstyle && npm test",
     "test": "karma start"
   },
