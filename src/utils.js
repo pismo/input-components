@@ -1,17 +1,17 @@
 export function getPath(object, path) {
-  const paths = path.split('.');
-  const currentKey = paths[0];
+    const paths = path.split('.');
+    const currentKey = paths[0];
 
-  if (!object) {
-    return undefined;
-  }
+    if (!object) {
+        return undefined;
+    }
 
-  if (currentKey === "") {
-    return object;
-  }
+    if (currentKey === '') {
+        return object;
+    }
 
-  const value = object[currentKey];
-  const next = paths.splice(1).join('.');
+    const value = object[currentKey];
+    const next = paths.splice(1).join('.');
 
-  return getPath(value, next);
+    return getPath(value, next);
 }

@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack -p",
+    "lint": "eslint --fix src/**",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -14,6 +15,8 @@
     "babel-loader": "^6.2.5",
     "babel-preset-es2015": "^6.13.2",
     "bower": "^1.7.9",
+    "eslint": "^2.x.x",
+    "eslint-config-pismo": "github:pismo/eslint-config-pismo#1.0.0",
     "webpack": "^1.13.2"
   },
   "dependencies": {

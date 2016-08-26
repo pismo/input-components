@@ -10,16 +10,15 @@ function equality() {
         restrict: 'A',
         require: 'ngModel',
         link(scope, element, attrs, ngModel) {
-            let attr = attrs.inputEquality;
+            const attr = attrs.inputEquality;
+
+            if (!attr) {
+                throw new Error('missing input-equality attribute value');
+            }
 
             ngModel.$validators.equality = (viewValue, modelValue) => {
-                let value;
-                let confirmationValue;
-
-                if (!attr) return false;
-
-                value = viewValue || modelValue || '';
-                confirmationValue = getPath(scope, attr);
+                const value = viewValue || modelValue || '';
+                const confirmationValue = getPath(scope, attr);
 
                 return value === confirmationValue;
             };
