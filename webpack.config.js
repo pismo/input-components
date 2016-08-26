@@ -1,26 +1,23 @@
 module.exports = {
-    entry: "./src/index.js",
+    entry: './src/index.js',
     output: {
-        filename: "./dist/bundle.js",
+        filename: './dist/bundle.js',
         libraryTarget: 'umd'
     },
 
-    devtool: "source-map",
+    devtool: 'source-map',
 
     module: {
         loaders: [
             {
                 test: /.js$/,
                 loader: 'babel-loader',
-                exclude: /node_modules/,
-                query: {
-                  presets: ['es2015']
-                }
+                exclude: [/node_modules/]
             }
-        ],
+        ]
     },
 
     externals: {
-        "angular": "angular"
-    },
+        angular: true
+    }
 };
