@@ -1,6 +1,3 @@
-var path    = require('path');
-var webpack = require('webpack');
-
 module.exports = {
     entry: "./src/index.js",
     output: {
@@ -8,17 +5,7 @@ module.exports = {
         libraryTarget: 'umd'
     },
 
-    sassLoader: {
-        includePaths: [
-            'node_modules/muicss'
-        ]
-    },
-
     devtool: "source-map",
-
-    resolve: {
-        extensions: ["", ".webpack.js", ".web.js", ".js"]
-    },
 
     module: {
         loaders: [
@@ -31,8 +18,6 @@ module.exports = {
                 }
             }
         ],
-
-        preLoaders: []
     },
 
     externals: {
