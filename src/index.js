@@ -1,4 +1,5 @@
 import angular from 'angular';
+import equalityModule from './components/equality'
 
 angular
-    .module('inputValidations', []);
+    .module('inputValidations', [equalityModule.name]);
