@@ -2,7 +2,7 @@
   "name": "input-components",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/bundle.js",
   "scripts": {
     "build": "webpack -p",
     "lint": "npm run lint-code -- --fix",
@@ -31,7 +31,10 @@
     "phantomjs-prebuilt": "^2.1.7",
     "webpack": "^1.13.2"
   },
-  "dependencies": {
+  "peerDependencies": {
     "angular": "^1.5.8"
+  },
+  "dependencies": {
+    "jquery": "^3.1.0"
   }
 }

@@ -18,6 +18,7 @@ module.exports = {
     },
 
     externals: {
-        angular: true
+        angular: 'angular',
+        jquery: 'jquery'
     }
 };
