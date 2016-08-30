@@ -7,4 +7,4 @@ const equalityModule = require('./components/equality');
  */
 const inputValidations = angular.module('inputValidations', [equalityModule.name]);
 
-export default inputValidations;
+module.exports = inputValidations;
