@@ -2,7 +2,7 @@
   "name": "input-components",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/bundle.js",
+  "main": "index.js",
   "scripts": {
     "build": "webpack -p",
     "lint": "npm run lint-code -- --fix",
@@ -33,6 +33,10 @@
   },
   "peerDependencies": {
     "angular": "^1.5.8",
-    "jquery": "^2.4.0"
+    "jquery": "^2.x.x"
+  },
+  "dependencies": {
+    "angular": "^1.5.8",
+    "jquery": "^2.x.x"
   }
 }
