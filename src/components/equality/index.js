@@ -1,5 +1,5 @@
 const angular = require('angular');
-const { getPath } = require('../../utils');
+const getPath = require('../../utils').getPath;
 
 /**
  * angular module to help to validate when one input has the same value than other
