@@ -1,4 +1,4 @@
-import * as utils from '../src/utils';
+import * as utils from '../src/lib/utils';
 
 describe('utils', () => {
     describe('#getPath', () => {

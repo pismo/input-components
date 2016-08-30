@@ -14,7 +14,7 @@
 * @param  {String} path   the path to get inside the object
 * @return {Object|undefined} the value for the given path or undefined if the path does not exist
 */
-exports.getPath = function getPath(object, path) {
+export function getPath(object, path) {
     const paths = path.split('.');
     const currentKey = paths[0];
 
@@ -30,4 +30,4 @@ exports.getPath = function getPath(object, path) {
     const next = paths.splice(1).join('.');
 
     return getPath(value, next);
-};
+}

@@ -1,5 +1,5 @@
-const angular = require('angular');
-const getPath = require('../../utils').getPath;
+import angular from 'angular';
+import { getPath } from '../../lib/utils';
 
 /**
  * angular module to help to validate when one input has the same value than other
@@ -29,14 +29,14 @@ function equality() {
     return {
         restrict: 'A',
         require: 'ngModel',
-        link: function(scope, element, attrs, ngModel) {
+        link(scope, element, attrs, ngModel) {
             const attr = attrs.inputEquality;
 
             if (!attr) {
                 throw new Error('missing input-equality attribute value');
             }
 
-            ngModel.$validators.equality = function(viewValue, modelValue) {
+            ngModel.$validators.equality = (viewValue, modelValue) => {
                 const value = viewValue || modelValue || '';
                 const confirmationValue = getPath(scope, attr);
 
@@ -48,4 +48,4 @@ function equality() {
     };
 }
 
-module.exports = equalityModule;
+export default equalityModule;

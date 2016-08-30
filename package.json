@@ -1,10 +1,13 @@
 {
   "name": "input-components",
-  "version": "1.0.0",
+  "version": "1.0.8",
   "description": "",
-  "main": "dist/bundle.js",
+  "main": "dist/packages/npm/index.js",
   "scripts": {
-    "build": "webpack -p",
+    "publish": "npm run build-npm && cat package.json | grep -v prepublish > dist/packages/npm/package.json && npm publish dist/packages/npm",
+    "build": "npm run build-browser && npm run build-npm",
+    "build-npm": "babel src --out-dir dist/packages/npm",
+    "build-browser": "webpack -p",
     "lint": "npm run lint-code -- --fix",
     "lint-code": "eslint app/scripts/**",
     "docs": "jsdoc --destination docs -r src/**",
@@ -12,7 +15,7 @@
     "test": "karma start"
   },
   "author": "",
-  "license": "ISC",
+  "license": "WTFPL",
   "devDependencies": {
     "angular-mocks": "^1.5.0",
     "babel-core": "^6.13.2",
@@ -32,11 +35,9 @@
     "webpack": "^1.13.2"
   },
   "peerDependencies": {
-    "angular": "^1.5.8",
-    "jquery": "^2.x.x"
+    "angular": "^1.4.x"
   },
   "dependencies": {
-    "angular": "^1.5.8",
-    "jquery": "^2.x.x"
+    "angular": "^1.4.x"
   }
 }

@@ -1,5 +1,5 @@
-const angular = require('angular');
-const equalityModule = require('./components/equality');
+import angular from 'angular';
+import equalityModule from './components/equality';
 
 /**
  *  angular module with some directives to help with input validations
@@ -7,4 +7,4 @@ const equalityModule = require('./components/equality');
  */
 const inputValidations = angular.module('inputValidations', [equalityModule.name]);
 
-module.exports = inputValidations;
+export default inputValidations;
