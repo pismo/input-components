@@ -33,6 +33,6 @@
   },
   "peerDependencies": {
     "angular": "^1.5.8",
-    "jquery": "^3.1.0"
+    "jquery": "^2.4.0"
   }
 }
