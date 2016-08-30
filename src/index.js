@@ -1,5 +1,5 @@
-import angular from 'angular';
-import equalityModule from './components/equality';
+const angular = require('angular');
+const equalityModule = require('./components/equality');
 
 /**
  *  angular module with some directives to help with input validations

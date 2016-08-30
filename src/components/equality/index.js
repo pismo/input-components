@@ -1,5 +1,5 @@
-import angular from 'angular';
-import { getPath } from '../../utils';
+const angular = require('angular');
+const { getPath } = require('../../utils');
 
 /**
  * angular module to help to validate when one input has the same value than other
@@ -48,4 +48,4 @@ function equality() {
     };
 }
 
-export default equalityModule;
+module.exports = equalityModule;
