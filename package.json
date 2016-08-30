@@ -2,7 +2,7 @@
   "name": "input-components",
   "version": "1.0.0",
   "description": "",
-  "main": "src/index.js",
+  "main": "dist/bundle.js",
   "scripts": {
     "build": "webpack -p",
     "lint": "npm run lint-code -- --fix",
