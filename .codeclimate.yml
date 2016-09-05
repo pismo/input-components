@@ -1,7 +1,11 @@
 engines:
-  eslint:
-    enabled: true
-    channel: "eslint-2"
+    eslint:
+        enabled: false
+    duplication:
+        enabled: true
+    fixme:
+        enabled: true
 ratings:
-   paths:
-       - "**.js"
+    paths:
+        - "src/**.js"
+        - "specs/**.js"
