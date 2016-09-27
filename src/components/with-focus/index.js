@@ -6,7 +6,7 @@ import angular from 'angular';
  */
 const withFocusModule = angular
     .module('withFocus', [])
-    .directive('withFocus', directive);
+      .directive('withFocus', ['$timeout', directive]);
 /**
  * with-focus - a directive that triggers the input focus depending on the state of it's value
  * @name with-focus
