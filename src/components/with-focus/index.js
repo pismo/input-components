@@ -2,18 +2,18 @@ import angular from 'angular';
 
 /**
  * angular module to help to to trigger the input focus
- * @namespace manualFocus
+ * @namespace withFocus
  */
-const manualFocusModule = angular
-    .module('manualFocus', [])
-    .directive('manualFocus', directive);
+const withFocusModule = angular
+    .module('withFocus', [])
+    .directive('withFocus', directive);
 /**
- * manual-focus - a directive that triggers the input focus depending on the state of it's value
- * @name manual-focus
- * @memberof manualFocus
+ * with-focus - a directive that triggers the input focus depending on the state of it's value
+ * @name with-focus
+ * @memberof withFocus
  * @example
  * ```html
- *     <input manual-focus="{{ vm.focus }}" />
+ *     <input with-focus="{{ vm.focus }}" />
  * ```
  * @return {Directive}  directive definition
  */
@@ -21,10 +21,10 @@ function directive($timeout) {
     return {
         restrict: 'A',
         scope: {
-            manualFocus: '@'
+            withFocus: '@'
         },
         link(scope, element, attrs) {
-            attrs.$observe('manualFocus', (value) => {
+            attrs.$observe('withFocus', (value) => {
                 if (value === 'true') {
                     $timeout(() => {
                         element[0].focus();
@@ -36,4 +36,4 @@ function directive($timeout) {
 }
 
 
-export default manualFocusModule;
+export default withFocusModule;
