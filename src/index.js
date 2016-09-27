@@ -1,10 +1,11 @@
 import angular from 'angular';
 import equalityModule from './components/equality';
+import withFocusModule from './components/with-focus';
 
 /**
- *  angular module with some directives to help with input validations
- *  @namespace inputValidations
+ *  angular module with some directives to help with input events, actions and validations
+ *  @namespace inputHelpers
  */
-const inputValidations = angular.module('inputValidations', [equalityModule.name]);
+const inputHelpers = angular.module('inputHelpers', [withFocusModule.name, equalityModule.name]);
 
-export default inputValidations;
+export default inputHelpers;
