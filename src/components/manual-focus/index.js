@@ -1,14 +1,14 @@
 import angular from 'angular';
 
 /**
- * angular module to help to validate when one input has the same value than other
+ * angular module to help to to trigger the input focus
  * @namespace manualFocus
  */
 const manualFocusModule = angular
     .module('manualFocus', [])
     .directive('manualFocus', directive);
 /**
- * manual-focus - a directive that checks when a input has the same value than other
+ * manual-focus - a directive that triggers the input focus depending on the state of it's value
  * @name manual-focus
  * @memberof manualFocus
  * @example
@@ -17,7 +17,7 @@ const manualFocusModule = angular
  * ```
  * @return {Directive}  directive definition
  */
- function directive($timeout) {
+function directive($timeout) {
     return {
         restrict: 'A',
         scope: {
@@ -33,7 +33,7 @@ const manualFocusModule = angular
             });
         }
     };
- }
+}
 
 
 export default manualFocusModule;
